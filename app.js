@@ -35,7 +35,7 @@ function checkWin(){
         let pattern2 = boxes[win[2]].innerText;
         if(pattern0 != "" && pattern1 != "" && pattern2 != ""){
             if(pattern0 == pattern1 && pattern1 == pattern2){
-                winningMsg.innerText = `Congratulations winner is ${pattern0}`;
+                winningMsg.innerText = `You Win ${pattern0}`;
                 boxes.forEach((box) => {
                     box.disabled = true;
                 })
